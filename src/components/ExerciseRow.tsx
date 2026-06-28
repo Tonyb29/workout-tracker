@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Exercise, ExerciseLog } from '../types';
+import { ExerciseDemo } from './ExerciseDemo';
 
 interface Props {
   exercise: Exercise;
@@ -46,6 +47,10 @@ export function ExerciseRow({ exercise, log, onToggleDone, onUpdateSet, accentCo
       </div>
 
       {exercise.note && <div className="ex-note">{exercise.note}</div>}
+
+      {exercise.demoId && (
+        <ExerciseDemo demoId={exercise.demoId} accentColor={accentColor} />
+      )}
 
       {expanded && !isCardio && (
         <div className="ex-sets">

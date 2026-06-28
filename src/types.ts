@@ -36,6 +36,7 @@ export interface Exercise {
   reps?: string;
   duration?: number;
   note?: string;
+  demoId?: string;
 }
 
 export interface WorkoutDay {
