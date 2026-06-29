@@ -459,28 +459,23 @@ h1 {
   padding: 0 10px 6px 37px;
 }
 
-.demo-btn {
+.yt-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   background: transparent;
   border: 1px solid;
   border-radius: 4px;
   padding: 3px 10px;
   font-size: 11px;
   font-weight: 600;
-  cursor: pointer;
+  text-decoration: none;
   letter-spacing: 0.3px;
   transition: opacity 0.15s;
 }
 
-.demo-btn:hover {
-  opacity: 0.75;
-}
-
-.demo-panel {
-  margin-top: 8px;
-  background: rgba(0,0,0,0.25);
-  border-radius: 6px;
-  padding: 10px 8px 4px;
-  overflow: hidden;
+.yt-btn:hover {
+  opacity: 0.7;
 }
 
 /* ── Notes ── */

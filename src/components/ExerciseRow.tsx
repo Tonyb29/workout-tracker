@@ -48,8 +48,8 @@ export function ExerciseRow({ exercise, log, onToggleDone, onUpdateSet, accentCo
 
       {exercise.note && <div className="ex-note">{exercise.note}</div>}
 
-      {exercise.demoId && (
-        <ExerciseDemo demoId={exercise.demoId} accentColor={accentColor} />
+      {exercise.youtubeQuery && (
+        <ExerciseDemo youtubeQuery={exercise.youtubeQuery} accentColor={accentColor} />
       )}
 
       {expanded && !isCardio && (
